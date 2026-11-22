@@ -471,15 +471,15 @@ footer a { color: var(--indigo); font-weight: 800; }
 
   <nav class="social" id="social" aria-label="Social"></nav>
 
-  <section aria-labelledby="testsTitle">
-    <h2 class="sec-title" id="testsTitle"></h2>
-    <div class="tests" id="tests"></div>
-  </section>
-
   <section aria-labelledby="examTitle">
     <h2 class="sec-title" id="examTitle"></h2>
     <div class="tabs" id="tabs" role="tablist" aria-labelledby="examTitle"></div>
     <div class="rows" id="examPanel" role="tabpanel"></div>
+  </section>
+
+  <section aria-labelledby="testsTitle">
+    <h2 class="sec-title" id="testsTitle"></h2>
+    <div class="tests" id="tests"></div>
   </section>
 
   </div>
@@ -568,6 +568,7 @@ const CONTENT = {
     items: [
       { id: "gat", tab: { ar: "GAT", en: "GAT" },
         links: [
+          { type: "course", url: "https://leen.sa/courses/gat-qudrat", ar: "دورة القدرات بالإنجليزية", en: "GAT course in English" },
           { type: "community", url: GAT_LIVE, ar: "تجميعات القدرات 2026", en: "GAT 2026 Tajmiat" },
           { type: "practice", url: "https://leengat.netlify.app/", ar: "تدرّب على اختبار القدرات", en: "GAT practice test" },
           { type: "pack", url: "https://leen.sa/products/gat-qudrat", ar: "حزمة القدرات بالإنجليزية", en: "GAT pack in English" }
@@ -579,6 +580,7 @@ const CONTENT = {
         ] },
       { id: "mawhiba", tab: { ar: "موهبة", en: "Mawhiba" },
         links: [
+          { type: "course", url: "https://leen.sa/categories/mkyas-mohb", ar: "دورات مقياس موهبة", en: "Mawhiba courses" },
           { type: "practice", url: "https://leenmawhiba.netlify.app", ar: "اختبار محاكي لمقياس موهبة", en: "Mawhiba simulation test" },
           { type: "video", url: "https://youtu.be/oLwL0tDNE3Q", ar: "كيف أستعد لمقياس موهبة؟", en: "How to prepare for Mawhiba" }
         ] },
@@ -589,6 +591,7 @@ const CONTENT = {
         ] },
       { id: "cpc", tab: { ar: "CPC", en: "CPC" },
         links: [
+          { type: "course", url: "https://leen.sa/courses/cpc", ar: "دورة الابتعاث الجامعي CPC", en: "CPC course" },
           { type: "pack", url: "https://leen.sa/products/cpc", ar: "حزمة الابتعاث الجامعي CPC", en: "CPC scholarship pack" },
           { type: "practice", url: "https://leencpcvocab.netlify.app", ar: "تدرّب على 1000 كلمة لاختبار CPC", en: "Practise 1,000 CPC words" }
         ] }
